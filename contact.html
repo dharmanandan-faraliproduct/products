@@ -22,6 +22,25 @@
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+.button
+{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button-red
+{
+  background-color: #ff7404;
+}
+</style>
 <script type="text/javascript">
 
     function validate_form ( )
@@ -34,6 +53,10 @@
         valid = false;
       }
       return valid;
+    }
+    function clear()
+    {
+      document.getElementById("myForm").reset();
     }
 
 </script>
@@ -79,7 +102,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <form action="https://script.google.com/macros/s/AKfycbw4SUsqp_n8_poags93RJNgW4nW9Ibb7b_KO-KQ/exec" method="post" name="contact_form" onsubmit="return validate_form();">
+          <form action="https://script.google.com/macros/s/AKfycbw4SUsqp_n8_poags93RJNgW4nW9Ibb7b_KO-KQ/exec" method="post" name="contact_form" onsubmit="return validate_form();" id="myform">
             <div class="row">
               <div class="col-md-6 form-group">
                 <label for="name">Name</label>
@@ -104,7 +127,7 @@
             </div>
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary">
+                <input type="submit" value="Send Message" class="button button-red" onclick="clear()">
               </div>
             </div>
           </form>
@@ -113,24 +136,24 @@
           <div class="col-md-12 mx-auto contact-form-contact-info">
             <p class="d-flex">
               <span class="ion-ios-location icon mr-5"></span>
-              <span>27/20, Parul Chamber, Savjibhai Street, Soni Bazzar, Rajkot</span>
+              <span>27/20, Parul Chamber, Savjibhai Street, Soni Bazzar, Rajkot, 360001</span>
             </p>
 
             <p class="d-flex">
               <span class="ion-ios-location icon mr-5"></span>
-              <span>"Shree Hari", 11/3, Gayatri Nagar, Street No-3, Rajkot</span>
+              <span>"Shree Hari", 11/3, Gayatri Nagar, Street No-3, Rajkot, <br>360002</span>
             </p>
             <p class="d-flex">
               <span class="fa fa-whatsapp icon mr-5"></span>
-              <span>NiteshBhai : <a href="tel:+919428911714 ">+91 94289 11714</a></span>
+              <span>NiteshBhai &nbsp;&nbsp;: <a href="tel:+919428911714">&nbsp;+91 94289 11714</a></span>
             </p>
             <p class="d-flex">
               <span class="fa fa-whatsapp icon mr-5"></span>
-              <span>JiteshBhai : <a href="tel:+918866257854">+91 88662 57854</a></span>
+              <span>JiteshBhai &nbsp;&nbsp;&nbsp;&nbsp;: <a href="tel:+918866257854">&nbsp;+91 88662 57854</a></span>
             </p>
             <p class="d-flex">
               <span class="fa fa-whatsapp icon mr-5"></span>
-              <span>NimeshBhai : <a href="tel:+917405545201">+91 74055 45201</a>  </span>
+              <span>NimeshBhai : <a href="tel:+917405545201">&nbsp;+91 74055 45201</a> </span>
             </p>
             <p class="d-flex">
               <span class="fa fa-envelope icon mr-5"></span>
