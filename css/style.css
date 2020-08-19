@@ -521,7 +521,9 @@ header {
 
 .owl-carousel.major-caousel .owl-stage-outer {
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  overflow-y: scroll;
+ }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev, .owl-carousel.major-caousel .owl-nav .owl-next {
   -webkit-transition: .3s all ease;
@@ -588,13 +590,13 @@ header {
 
 .slider-wrap {
   position: relative;
-   z-index: -1; }
+  z-index: -1 }
   /*.slider-wrap:after {
     content: "";
     width: 100%;
     height: 240px;
     background: #fff;
-    
+    z-index: 1;
     bottom: -210px;
     background-color: #f8f9fa;
     left: 0;
