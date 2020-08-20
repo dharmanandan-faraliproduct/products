@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  color: #868e96; }
+  color: #000000; }
 
 a {
   -webkit-transition: .3s all ease;
@@ -94,7 +94,7 @@ header {
         header .navbar-brand span {
           color: #ced4da; } }
   header .navbar {
-    background: black !important;
+    background: #151414 !important;
     padding-top: .5rem;
     padding-bottom: .5rem; }
     @media (min-width: 768px) {
@@ -716,15 +716,15 @@ header {
     height: 50px !important; }
 
 .contact-form-contact-info p {
-  margin-bottom: 30px;
-  font-size: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
   line-height: 1.5;
   color: #000; }
   .contact-form-contact-info p .icon {
     top: -4px;
     position: relative;
     width: 0px;
-    font-size: 30px;
+    font-size: 25px;
     color: #ff7404; }
 
 .load-more {
